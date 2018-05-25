@@ -35,7 +35,7 @@ Page({
     var ym = y + '-' + (mon < 10 ? "0" + mon : mon);
 
     var refer = this;
-    wx.request({
+    /*wx.request({
       url: 'https://aisss5ct.qcloud.la/Emp/mobile/studycalendar/query/' + '020b28e556de4352a231650c1637653c' + '/' + ym,
       method: 'GET',
 
@@ -54,6 +54,8 @@ Page({
         refer.getDateList(y, mon-1);
       }
     })
+	*/
+	refer.getDateList(y, mon-1);
 
   },
 

@@ -7,8 +7,7 @@
     "pages/logs/logs",
     "pages/page_003/page_003",
     "pages/page_004/page_004",
-    "pages/page_006/page_006",
-    "pages/page_007/page_007"
+    "pages/page_006/page_006"
   ],
   "window": {
     "backgroundTextStyle": "light",

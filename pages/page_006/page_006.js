@@ -131,7 +131,7 @@ Page({
     var count = 2;  // it should be BE result 
     var uid = '020b28e556de4352a231650c1637653c';
     var refer = this;
-    wx.request({
+    /*wx.request({
       url: 'https://aisss5ct.qcloud.la/Emp/mobile/wordexam/query/' + uid,
       method: 'GET',
       success: function (res) {
@@ -150,7 +150,13 @@ Page({
       fail: function(res){
         console.log(res)
       }
-    })
+    })*/
+	var emptyarray = new Array(count);
+	for (var i = 0; i < count; i++) emptyarray[i] = "-1";
+	refer.setData({
+	  myanswer: emptyarray,
+	  startTime: new Date()
+	})
   },
 
   /**

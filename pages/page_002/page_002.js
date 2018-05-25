@@ -62,7 +62,8 @@ Page({
       if (this.data.pagestyle == 'complex') {
         //console.log("call backend, pagestyle == 'complex'");
         var wid = this.data.wordidlist[wi];
-        wx.request({
+        /*
+		wx.request({
           url: 'https://aisss5ct.qcloud.la/Emp/mobile/bearword/mean/' + wid,
           method: 'GET',
 
@@ -77,6 +78,7 @@ Page({
             })
           }
         })
+		*/
       }
     }
   },
@@ -85,7 +87,8 @@ Page({
   speech: function () {
     var refer = this;
     var word = refer.data.wordlist[refer.data.wordindex];
-    wx.request({
+    /*
+	wx.request({
       url: 'https://aisss5ct.qcloud.la/Emp/mobile/word/pronunciation/' + word,
       method: 'GET',
       success: function (res) {
@@ -93,6 +96,7 @@ Page({
         backgroundAudioManager.src = res.data
       }
     })
+	*/
   },
 
   //显示详细释义
@@ -103,7 +107,8 @@ Page({
         pagestyle: 'complex'
       })
       var wid = refer.data.wordidlist[refer.data.wordindex];
-      wx.request({
+      /*
+	  wx.request({
         url: 'https://aisss5ct.qcloud.la/Emp/mobile/bearword/mean/' + wid,
         method: 'GET',
         success: function (resz) {
@@ -117,6 +122,7 @@ Page({
           })
         }
       })
+	  */
     } else if (this.data.pagestyle == 'complex') {
       this.setData({
         pagestyle: 'simple'
@@ -130,6 +136,7 @@ Page({
   onLoad: function (options) {
     var refer = this;
     var uid = '020b28e556de4352a231650c1637653c';
+	/*
     wx.request({
       url: 'https://aisss5ct.qcloud.la/Emp/mobile/bearword/query/' + uid,
       method: 'GET',
@@ -156,6 +163,7 @@ Page({
         })
       }
     })
+	*/
   },
 
   /**

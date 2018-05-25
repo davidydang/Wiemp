@@ -34,6 +34,7 @@ Page({
     var refer = this;
     //已完成单词
     var uid = '020b28e556de4352a231650c1637653c';
+	/*
     wx.request({
       url: 'https://aisss5ct.qcloud.la/Emp/mobile/bearword/doneWordCount/' + uid,
       method: 'GET',
@@ -44,8 +45,10 @@ Page({
         })
       }
     })
+	*/
     //打卡状态
-    wx.request({
+    /*
+	wx.request({
       url: 'https://aisss5ct.qcloud.la/Emp/mobile/bearword/whetherDoneHitCard/' + uid,
       method: 'GET',
       success: function (resz) {
@@ -59,6 +62,7 @@ Page({
         })
       }
     })
+	*/
   },
 
   /**

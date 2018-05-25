@@ -14,6 +14,7 @@ App({
             success: function (resu) {
               //console.log({ encryptedData: resu.encryptedData, iv: resu.iv, code: res.code })
               //解密用户信息
+              /*
               wx.request({
                 url: 'https://aisss5ct.qcloud.la/Emp/mobile/login/login',
                 method: 'POST',
@@ -34,11 +35,15 @@ App({
                   })
                 }
               })
+              */
             },
             fail: function () {
               util.showModel('请求失败', error);
               console.log('获取用户信息失败')
             }
+          });
+          wx.navigateTo({
+            url: '../page_001/page_001',
           })
         } else {
           console.log('获取用户登录态失败！' + res.errMsg)
